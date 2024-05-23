@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lewis</title>
+	<link rel="stylesheet" href="style2.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+	
+	<div class = "wrapper">
+		<form action = "">
+			<h1>Login</h1>
+
+			<div class = "form__message form__message--errpr"></div>
+
+			<div class = "input-box">
+				<input type = "text" name = "userName" placeholder = "Username" required>
+				<i class='bx bxs-user'></i>
+			</div>
+			<div class = "input-box">
+				<input type = "password" name = "userPassword" placeholder = "Passowrd" required>
+				<i class='bx bxs-lock-alt' ></i>
+			</div>
+			<div class = "remember-forgot">
+				<label><input type = "checkbox">Remember Me</label>
+				<a href = "ForgotUserData.html">Forgot password</a>
+			</div>
+			<button type = "submit" id = "linkLogin" class = "btn">Login</button>
+			<div class = "register-link">
+				<p>Dont have an account? <a href = "CreateAccount.html" id = "linkCreateAccount">Register</a></p>
+			</div>
+		</form>
+
+	<script src="main.js"></script>
+
+
+</body>

@@ -1,0 +1,233 @@
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.container1{
+    justify-content: center;
+}
+body { 
+    background: #1c2331;
+    background-image: url("img/circitimg.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(255, 255, 255, .2);
+    background-position: top;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+h2{
+    text-align: center;
+}
+.paragraphs{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 620px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+.paragraphs2{
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    width: 620px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+}
+
+/*Nav Bar Css */
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+.havbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+}
+.navbar{
+    transition: transform 0.3s;
+}
+
+.bx:hover{
+    transform: translateY(-5px);
+}
+.nav-item:hover{
+    transform: translateY(-5px);
+}
+
+/*Carousel Css*/
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.pictures{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.pictures:before,
+.pictures:after{
+    position: absolute;
+    top: 0;
+    width: 75px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.pictures:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255, 0), rgba(1, 17, 40));
+}
+.pictures:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255, 0), rgba(1, 17, 40));
+}
+.pictures:hover .pictures-slides{
+    animation-play-state: paused;
+}
+.pictures-slides{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.pictures-slides img{
+    height: 300px;
+}
+
+/*Picutre Css*/
+@keyframes slideInRight{
+    from {
+        transform: translateX(300px)
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.pic{
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+    float: right;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+/*Email Form Css*/
+.contact h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
