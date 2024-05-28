@@ -50,9 +50,7 @@ h2{
 /*Nav Bar Css */
 .navbar ul{
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+    overflow: visible;
 }
 .navbar a{
     text-decoration: none;
@@ -60,16 +58,15 @@ h2{
     display: block;
     text-align: center;
 }
-.havbar a:hover{
-    background-color: hsl(0, 0%, 10%);
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 .navbar li{
     float: left;
-
     background: transparent;
     border: none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 35px;
     font-size: 16px;
     padding: 10px 10px 10px 10px;
 }
