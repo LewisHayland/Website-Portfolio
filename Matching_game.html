@@ -7,13 +7,54 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Memory Cards</h1>
-    <h1>Match the cards whilst trying to get the lowest score!</h1>
-    <div class="grid-container"></div>
-    <h1><span class="score"></span></h1>
-    <div class="actions">
-        <button onclick="restart()">Restart</button>
-    </div>
-    <script src="Matching_game_index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nva-item">
+							<a class="nav-link active" aria-current="page"><strong>Lewis</strong></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="About.html">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="Experience.html">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="Projects.html">Projects</a>
+						  </li>
+						  <!--<div class="dropdown">
+							  <li class="nav-item dropdown">
+								  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									  Projects
+								  </a>
+								  <ul class="dropdown-menu">
+									  <li><a class="dropdown-item" href="Matching_game.html">Matching Game</a></li>
+								  </ul>
+							  </li>
+						  </div>-->
+					</ul>
+			  	</div>
+			</div>
+		</nav>
+
+        <h1>Memory Cards</h1>
+        <h1>Match the cards whilst trying to get the lowest score!</h1>
+        <div class="grid-container"></div>
+        <h1><span class="score"></span></h1>
+        <div class="actions">
+            <button onclick="restart()">Restart</button>
+        </div>
+        <script src="Matching_game_index.js"></script>
 </body>
 </html>

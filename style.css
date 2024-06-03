@@ -230,6 +230,10 @@ form button:hover {
 }
 
 /*Matching game style*/
+h1{
+    color: #fff;
+}
+
 .actions {
     display: flex;
     justify-content: center;
