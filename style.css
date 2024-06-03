@@ -250,9 +250,9 @@ h1{
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-gap: 16px;
-  grid-template-columns: repeat(6, 140px);
-  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+  grid-gap: 25px;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(2, calc(200px / 2 * 3));
 }
 
 .card {
