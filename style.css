@@ -246,13 +246,13 @@ form button:hover {
 .grid-container {
     display: grid;
     justify-content: center;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(calc(140px / 2 * 3), 1fr));
-    padding: 20px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
+    gap: 25px; /* Changed from grid-gap to gap */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Changed to auto-fit for responsiveness */
+    grid-auto-rows: calc(140px * 1.5); /* Adjusted for better responsiveness */
+    padding: 20px; /* Added padding for better spacing */
+    max-width: 100%; /* Ensure the grid container does not exceed the screen width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
 
 .card {
   height: calc(140px / 2 * 3);
