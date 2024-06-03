@@ -230,10 +230,6 @@ form button:hover {
 }
 
 /*Matching game style*/
-h1{
-    color: #fff;
-}
-
 .actions {
     display: flex;
     justify-content: center;
@@ -248,11 +244,14 @@ h1{
 }
 
 .grid-container {
-  display: grid;
-  justify-content: center;
-  grid-gap: 25px;
-  grid-template-columns: repeat(6, 200px);
-  grid-template-rows: repeat(2, calc(200px / 2 * 3));
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(calc(140px / 2 * 3), 1fr));
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .card {
