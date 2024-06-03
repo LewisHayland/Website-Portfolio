@@ -1,18 +1,24 @@
 const gridContainer = document.querySelector(".grid-container");
-let cards = [];
+let cards = [
+  { "image": "./assets/chili.png", "name": "chili" },
+  { "image": "./assets/grapes.png", "name": "grapes" },
+  { "image": "./assets/lemon.png", "name": "lemon" },
+  { "image": "./assets/orange.png", "name": "orange" },
+  { "image": "./assets/pineapple.png", "name": "pineapple" },
+  { "image": "./assets/strawberry.png", "name": "strawberry" },
+  { "image": "./assets/tomato.png", "name": "tomato" },
+  { "image": "./assets/watermelon.png", "name": "watermelon" },
+  { "image": "./assets/cherries.png", "name": "cherries" }
+];
+cards = [...cards, ...cards];
 let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
 
-document.querySelector(".score").textContent = score;
+document.querySelector(".score").textContent = `Score: ${score}`;
 
-fetch("./data/cards.json")
-  .then((res) => res.json())
-  .then((data) => {
-    cards = [...data, ...data];
-    shuffleCards();
-    generateCards();
-  });
+shuffleCards();
+generateCards();
 
 function shuffleCards() {
   let currentIndex = cards.length,
@@ -56,7 +62,7 @@ function flipCard() {
 
   secondCard = this;
   score++;
-  document.querySelector(".score").textContent = score;
+  document.querySelector(".score").textContent = `Score: ${score}`;
   lockBoard = true;
 
   checkForMatch();
@@ -64,14 +70,12 @@ function flipCard() {
 
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
-
   isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-
   resetBoard();
 }
 
@@ -93,7 +97,7 @@ function restart() {
   resetBoard();
   shuffleCards();
   score = 0;
-  document.querySelector(".score").textContent = score;
+  document.querySelector(".score").textContent = `Score: ${score}`;
   gridContainer.innerHTML = "";
   generateCards();
 }
