@@ -244,15 +244,13 @@ form button:hover {
 }
 
 .grid-container {
-    display: grid;
-    justify-content: center;
-    gap: 25px; /* Changed from grid-gap to gap */
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Changed to auto-fit for responsiveness */
-    grid-auto-rows: calc(140px * 1.5); /* Adjusted for better responsiveness */
-    padding: 20px; /* Added padding for better spacing */
-    max-width: 100%; /* Ensure the grid container does not exceed the screen width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  }
+  height: 680px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 25px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
 
 .card {
   height: calc(140px / 2 * 3);
