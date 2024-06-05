@@ -11,10 +11,10 @@ function sendEmail() {
     Email.send({
         SecureToken: "Your SMTP Secure Token Here",
         Host: "smtp.elasticemail.com",
-        Username: "lhayland@gmail.com",
+        Username: "datagates@datagates.ink",
         Password: "",
-        To: 'lhayland@gmail.com',
-        From: "lhayland@gmail.com",
+        To: 'datagates@datagates.ink',
+        From: "datagates@datagates.ink",
         Subject: subject.value,
         Body: bodyMessage
     }).then(
