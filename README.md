@@ -1,3 +1,7 @@
+# Possible Issues
+The email contact form wont work untill i have found a way to make my smtp key secure and not visable for users to see will try and use .gitignore to fix there probelms and hopefull be updated soon.
+
+
 # Website-Portfolio
 This is my website portfolio to help myself stand out as a programmer.
 
