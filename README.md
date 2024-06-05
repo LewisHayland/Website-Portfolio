@@ -1,3 +1,6 @@
+# Website link
+https://datagates.ink
+
 # Possible Issues
 The email contact form wont work untill i have found a way to make my smtp key secure and not visable for users to see will try and use .gitignore to fix there probelms and hopefull be updated soon.
 
