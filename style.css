@@ -2,8 +2,10 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+
 .container1{
     justify-content: center;
+    text-align: center;
 }
 body { 
     background: #1c2331;
