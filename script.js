@@ -5,6 +5,7 @@ const phone = document.getElementById("phone");
 const subject = document.getElementById("subject");
 const mess = document.getElementById("message");
 
+
 function sendEmail() {
     const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${mess.value}`;
 
@@ -12,7 +13,7 @@ function sendEmail() {
         SecureToken: "Your SMTP Secure Token Here",
         Host: "smtp.elasticemail.com",
         Username: "datagates@datagates.ink",
-        Password: "",
+        Password: process.env.password_api_key,
         To: 'datagates@datagates.ink',
         From: "datagates@datagates.ink",
         Subject: subject.value,
